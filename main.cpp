@@ -1,7 +1,7 @@
 /**
  *        Bismillahir Rahmanir Rahim
  *        Author:  Ashfak Hossain Evan, American International University, Bangladesh
- *        Created: 07/07/2023 00:50:59
+ *        Created: 07/07/2023 12:47:53
  **/
 #include <bits/stdc++.h>
 
@@ -38,7 +38,8 @@ const ld EPS = 1e-9;
 
 void solve()
 {
-    
+
+    /*Start*/
 }
 
 int main()
