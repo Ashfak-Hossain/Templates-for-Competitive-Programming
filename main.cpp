@@ -12,11 +12,12 @@
 #endif
 
 #define all(x) (x).begin(), (x).end()
-#define sz(x) int(x.size())
+#define sz(x) ((long long) x.size())
 #define char2Int(c) (c - '0')
 #define lastEle(vec) vec[vec.size() - 1]
 #define PI 3.1415926535897932384626433832795l
 #define endl '\n'
+#define pb push_back
 
 using namespace std;
 
@@ -24,12 +25,11 @@ typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
 typedef vector<int> vi;
-typedef vector<string> vs;
-typedef vector<vi> vvi;
-typedef map<int, int> mpii;
-typedef set<int> seti;
-typedef multiset<int> mseti;
+typedef vector<ll> vl;
+typedef vector<pii> vpi;
+typedef vector<pll> vpl;
 
 const int MAX_N = 1e5 + 5;
 const ll MOD = 1e9 + 7;
