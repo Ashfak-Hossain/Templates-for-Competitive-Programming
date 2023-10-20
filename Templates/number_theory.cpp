@@ -13,16 +13,17 @@ bool isprime(ll n) {
 			return false; 
 	return true; 
 }
-vector<bool> prime(15000105, 1);
+bool prime[15000105]; 
 void sieve(int n) { 
-	for (ll p = 3; p * p <= n; p+=2) { 
-		if (prime[p]) { 
-			for (ll i = p * p; i <= n; i += 2 * p) 
-				prime[i] = false; 
-		} 
-	} 
-	prime[1] = prime[0] = 0;
-}
+  for (ll i = 0; i <= n; i++) prime[i] = 1;
+  for (ll p = 2; p * p <= n; p++) { 
+    if (prime[p] == true) { 
+      for (ll i = p * p; i <= n; i += p) 
+        prime[i] = false; 
+    } 
+  } 
+  prime[1] = prime[0] = 0;
+} 
 vector<ll> primelist;
 bool __primes_generated__ = 0;
 void genprimes(int n) {
