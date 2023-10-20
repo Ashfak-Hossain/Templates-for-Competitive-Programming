@@ -1,11 +1,12 @@
 /**
- *        Bismillahir Rahmanir Rahim
- *        Author:  Ashfak Hossain Evan, American International University, Bangladesh
- *        Created: 07/07/2023 12:47:53
- **/
+*      Bismillahir Rahmanir Rahim
+*      Author:  Ashfak Hossain Evan, American International University, Bangladesh
+*      Created: $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND
+**/
+
 #include <bits/stdc++.h>
 
-#ifdef LOCAL
+#ifdef BERLIN
 #include "algo/debug.h"
 #else
 #define debug(...) 42
@@ -17,7 +18,14 @@
 #define lastEle(vec) vec[vec.size() - 1]
 #define PI 3.1415926535897932384626433832795l
 #define endl '\n'
+#define f first
+#define s second
 #define pb push_back
+#define fix(prec) {cout << setprecision(prec) << fixed;}
+#define mem(arr, v) memset(arr, v, sizeof(arr))
+#define getunique(v) {sort(all(v)); v.erase(unique(all(v)), v.end());}
+#define Muichiro {ios_base::sync_with_stdio(false);}
+#define Tokito {cin.tie(NULL); cout.tie(NULL);}
 
 using namespace std;
 
@@ -39,15 +47,14 @@ const ld EPS = 1e-9;
 void solve()
 {
 
-    /*Start*/
+
 }
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+    Muichiro Tokito
 
-#ifdef LOCAL
+#ifdef BERLIN
     freopen("input.txt", "r", stdin);
     freopen("error.txt", "w", stderr);
     freopen("output.txt", "w", stdout);
