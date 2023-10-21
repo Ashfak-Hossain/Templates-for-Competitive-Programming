@@ -21,6 +21,7 @@
 #define f first
 #define s second
 #define pb push_back
+#define range(i, v) for(auto &i : v)
 #define fix(prec) {cout << setprecision(prec) << fixed;}
 #define mem(arr, v) memset(arr, v, sizeof(arr))
 #define getunique(v) {sort(all(v)); v.erase(unique(all(v)), v.end());}
