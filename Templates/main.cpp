@@ -45,7 +45,7 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
 
-void solve()
+void Free_Palestine()
 {
 
 
@@ -64,7 +64,7 @@ int main()
     int _;
     cin >> _;
     while (_--)
-        solve();
+        Free_Palestine();
 
     return 0;
 }
