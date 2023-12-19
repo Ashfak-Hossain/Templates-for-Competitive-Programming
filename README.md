@@ -6,7 +6,7 @@
 
 ### C++ Build 
 
-To actually include this `debug.h` file you will have to compile your code with the `LOCAL` flag as follows: `g++ -DLOCAL <your-normal-compile-flags> a.cpp`. To do this just edit your build system and add `-DLOCAL` tag among the other tags.
+To actually include this `debug.h` file you will have to compile your code with the `BERLIN` flag as follows: `g++ -DBERLIN <your-normal-compile-flags> a.cpp`. To do this just edit your build system and add `-DBERLIN` tag among the other tags.
 
 # Competitive-Programming-Template
 
