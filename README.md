@@ -1,5 +1,5 @@
 
-## Authors
+## Author
 
 - [@ashfak](https://www.github.com/Ashfak-Hossain)
 
@@ -7,6 +7,22 @@
 ### C++ Build 
 
 To actually include this `debug.h` file you will have to compile your code with the `BERLIN` flag as follows: `g++ -DBERLIN <your-normal-compile-flags> a.cpp`. To do this just edit your build system and add `-DBERLIN` tag among the other tags.
+
+### Sublime Build
+```
+{
+  "shell_cmd": "g++ -std=c++17 -DBERLIN \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+  "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+  "working_dir": "${file_path}",
+  "selector": "source.c",
+  "variants": [
+    {
+      "name": "Run",
+      "shell_cmd": "g++ -std=c++17 -DBERLIN \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+    }
+  ]
+}
+```
 
 # Competitive-Programming-Template
 
@@ -120,5 +136,5 @@ Please make sure to update tests as appropriate.
 
 ## Support
 
-For support, email Evan1234.ek@gmail.com
+For support, email evan1234.ek@gmail.com
 
