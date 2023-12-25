@@ -56,6 +56,7 @@ int main()
     Muichiro Tokito
 
 #ifdef BERLIN
+    clock_t tStart = clock();
     freopen("input.txt", "r", stdin);
     freopen("error.txt", "w", stderr);
     freopen("output.txt", "w", stdout);
@@ -65,6 +66,10 @@ int main()
     cin >> _;
     while (_--)
         Free_Palestine();
+    
+#ifdef BERLIN
+    fprintf(stderr, "\nRuntime: %.10fs\n", (double) (clock() - tStart) / CLOCKS_PER_SEC);
+#endif
 
     return 0;
 }
